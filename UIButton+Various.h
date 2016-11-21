@@ -49,8 +49,9 @@ typedef NS_ENUM(NSUInteger, HSButtonEdgeInsetsStyle) {
  */
 + (UIButton *)noDefaultImageButtonStyle:(HSButtonStyle)style text:(NSString *)text font:(UIFont *)font textNormalColor:(UIColor *)textNormalColor textHighColor:(UIColor *)textHighColor imageNameN:(NSString *)imageNameN imageNameH:(NSString *)imageNameH imageNameD:(NSString *)imageNameD;
 
-
-// 项目中已经设置了该类按钮默认图片，在此方法可修改默认图片的设置
+/**
+ 项目中已经设置了该类按钮默认图片，在此方法可修改默认图片的设置
+ */
 + (UIButton *)haveDefaultImageButtonStyle:(HSButtonStyle)style text:(NSString *)text font:(UIFont *)font  textNormalColor:(UIColor *)textNormalColor textHighColor:(UIColor *)textHighColor;
 
 
