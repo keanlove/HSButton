@@ -52,9 +52,7 @@ typedef NS_ENUM(NSUInteger, HSButtonEdgeInsetsStyle) {
 /**
  项目中已经设置了该类按钮默认图片，在此方法可修改默认图片的设置
  */
-+ (UIButton *)haveDefaultImageButtonStyle:(HSButtonStyle)style text:(NSString *)text font:(UIFont *)font  textNormalColor:(UIColor *)textNormalColor textHighColor:(UIColor *)textHighColor;
-
-
++ (UIButton *)haveDefaultImageButtonStyle:(HSButtonStyle)style text:(NSString *)text font:(UIFont *)font textNormalColor:(UIColor *)textNormalColor textHighColor:(UIColor *)textHighColor;
 
 /**
  注： 插入的 image 和 label 的宽度之和不能 超过 button 的宽度
