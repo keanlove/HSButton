@@ -36,27 +36,24 @@
     
     
     //  例子2******************: 文字内嵌有图片，分有无默认图片,button 的 frame 在后设置
+    UIButton *button = [UIButton noDefaultImageButtonStyle:HSButtonTitleEmbedImage text:@"取消" font:[UIFont systemFontOfSize:20] textNormalColor:[UIColor blackColor] textHighColor:[UIColor redColor] imageNameN:@"0.jpg" imageNameH:@"1.jpg" imageNameD:@"2.jpg"];
+    button.frame = CGRectMake(60, 200, 300, 50);
+    
+    
     UIButton *button2 = [UIButton haveDefaultImageButtonStyle:HSButtonTitleEmbedImage text:@"确认"
                                                         font:[UIFont systemFontOfSize:20]
                                              textNormalColor:[UIColor blackColor]
                                                textHighColor:[UIColor redColor]];
-    
     button2.frame = CGRectMake(0, 0, 300, 50);
-
-//    UIButton *button = [UIButton noDefaultImageButtonStyle:HSButtonTitleEmbedImage text:@"取消" font:[UIFont systemFontOfSize:20] textNormalColor:[UIColor blackColor] textHighColor:[UIColor redColor] imageNameN:@"0.jpg" imageNameH:@"1.jpg" imageNameD:@"2.jpg"];
-
-//    button.frame = CGRectMake(0, 0, 300, 50);
-    
     
     
 //    例子3******************: 文字在图片周围的按钮配置
     UIButton *button3 = [UIButton initButtonEdgeInsetsStyle:HSButtonEdgeInsetsStyleTop buttonFrame:CGRectMake(100, 500, 200, 200) titleImage:@"psb.jpg" titleLabel:@"小明" titleColor:[UIColor redColor] font:[UIFont systemFontOfSize:20] imageAndTitleSpace:20];
     
     
-    
-    
     button2.center = self.view.center;
     button3.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:button];
     [self.view addSubview:button1];
     [self.view addSubview:button2];
     [self.view addSubview:button3];
